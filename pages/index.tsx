@@ -1,9 +1,14 @@
-import { Box, Text } from '@chakra-ui/react';
+import { Box, Text, Container, Grid, GridItem } from '@chakra-ui/react';
 const Home = () => {
 	return (
-		<Box>
-			<Text>test cuy</Text>
-		</Box>
+		<Grid templateColumns="repeat(12, 1fr)">
+			<GridItem colSpan={4} p="5">
+				user
+			</GridItem>
+			<GridItem colSpan={8} p="5">
+				list-movie
+			</GridItem>
+		</Grid>
 	);
 };
 
